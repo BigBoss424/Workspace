@@ -1,3 +1,18 @@
+/* 
+ * Stephen Hoerner
+ * CSCD 211
+ * 10/2/2012
+ */
+
+
+/*
+ * ANSWERS:
+ * 
+ * crier --> cmier --> crime
+ * dreary --> dmeary --> dreamy
+ * 
+ */
+
 import java.io.*;
 import java.util.*;
 
@@ -15,7 +30,6 @@ public class PermutationsDriver
 		int lineCount = countLines(file);
 		words = new String[lineCount];
 		
-		// each of these iterations represents 7 lines (1 letter)
 		for (int i = 0; i < lineCount; i++)
 		{
 			String w = fin.nextLine();
