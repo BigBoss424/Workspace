@@ -11,7 +11,7 @@ public class Driver
 	{
 		PostOffice postOffice = new PostOffice();
 		
-		postOffice.readLetters("c:/data/letters.in");
+		postOffice.readLetters("letters.in");
 		postOffice.sortLetters();
 		postOffice.printLetters();
 	}
