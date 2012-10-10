@@ -22,8 +22,11 @@ public class Triangle
 			// loop through & set internal array's values
 			for (int col = 0; col < row + 1; col++)
 			{
+				// either first or last column; it shall be assigned '1'
 				if (col == 0 || col == row)
 					nums[row][col] = 1;
+				
+				// time for some arithmetic
 				else
 					nums[row][col] = nums[row-1][col-1] + nums[row-1][col];
 			}
@@ -33,44 +36,18 @@ public class Triangle
 	@Override
 	public String toString()
 	{
-		String[] result = new String[nums.length];
-		
-		//result[row] = repeat("\t", (maxLength - nums[row].length) / 4);
-		
+		String result = "";
+
 		// loop through the rows
 		for (int row = 0; row < nums.length; row++)
 		{	
-			result[row] = "";
-			
+			// concatenation 'n stuff
 			for (int val : nums[row])
-				result[row] += val + "\t\t";
+				result += val + "  ";
+			
+			result += "\n";
 		}
 		
-		// prepare for some formatting
-		int almostMaxLength = result[result.length - 2].length();
-		int maxLength = result[result.length - 1].length();
-		
-		// loop through the rows AGAIN
-		for (int row = 0; row < nums.length; row++)
-		{	
-			if (row % 2 == 0)
-				result[row] = repeat("\t", (maxLength - result[row].length()) / 16) + result[row];
-			else
-				result[row] = repeat("\t", (almostMaxLength - result[row].length()) / 16) + result[row];
-		}
-		
-		String total = "";
-		
-		for (String row : result)
-			total += row + "\n";
-
-		return total;
-	}
-	
-	//	acquired from RosettaCode — http://rosettacode.org/wiki/Repeat_a_string#Java
-	
-	public static String repeat(String str, int times)
-	{
-		return new String(new char[times]).replace("\0", str);
+		return result;
 	}
 }

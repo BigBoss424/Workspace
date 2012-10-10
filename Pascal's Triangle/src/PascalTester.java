@@ -7,9 +7,9 @@
 
 public class PascalTester
 {
-
 	public static void main(String[] args)
 	{
+		// simple enough?
 		System.out.println(new Triangle(16));
 	}
 
