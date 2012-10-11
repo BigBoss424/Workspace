@@ -3,6 +3,8 @@
  * @author Stephen Hoerner
  * @course CSCD211
  * @date   10/9/12
+ * 
+ * extra credit NOT attempted :3
  */
 
 public class Triangle

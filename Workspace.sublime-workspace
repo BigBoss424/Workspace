@@ -1,0 +1,716 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"style",
+				"list-style:   (property)"
+			],
+			[
+				"included",
+				"includedFiles"
+			],
+			[
+				"php-",
+				"php-getset	Create getter and setter methods"
+			],
+			[
+				"phpuni",
+				"phpunit-test	Create a skeleton test method"
+			],
+			[
+				"phpunit",
+				"phpunit-testcase	Create a skeleton TestCase class"
+			],
+			[
+				"page",
+				"pageLocation"
+			],
+			[
+				"strt",
+				"strtolower  (function)"
+			],
+			[
+				"warning",
+				"warning_list"
+			],
+			[
+				"development",
+				"development_sigma"
+			],
+			[
+				"for",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Java/JavaC.sublime-build",
+	"command_palette":
+	{
+		"height": 111.0,
+		"selected_items":
+		[
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"package",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"ext",
+				"SublimeLinter: Extract Annotations"
+			],
+			[
+				"anno",
+				"Git: Toggle Annotations"
+			],
+			[
+				"annot",
+				"Git: Toggle Annotations"
+			],
+			[
+				"fetch",
+				"Fetch"
+			],
+			[
+				"f",
+				"Fetch"
+			],
+			[
+				"git",
+				"Git: Quick Commit"
+			],
+			[
+				"git to",
+				"Git: Toggle Annotations"
+			],
+			[
+				"git ",
+				"Git: Toggle Annotations"
+			],
+			[
+				"git co",
+				"Git: Commit"
+			],
+			[
+				"package l",
+				"Package Control: List Packages"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"linter ex",
+				"SublimeLinter: Extract Annotations"
+			],
+			[
+				"fet",
+				"Fetch"
+			],
+			[
+				"lint ",
+				"SublimeLinter: Extract Annotations"
+			],
+			[
+				"linter",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"sublime",
+				"SublimeLinter: Extract Annotations"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Disable Package"
+			],
+			[
+				"term",
+				"Preferences: Terminal Settings – Default"
+			],
+			[
+				"terminal",
+				"Preferences: Terminal Settings – User"
+			],
+			[
+				"package up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"prefere",
+				"Preferences: Settings - User"
+			],
+			[
+				"package in",
+				"Package Control: Install Package"
+			],
+			[
+				"package li",
+				"Package Control: List Packages"
+			],
+			[
+				"git sta",
+				"Git: Status"
+			],
+			[
+				"git pull",
+				"Git: Pull"
+			],
+			[
+				"gist",
+				"Gist: Update File"
+			],
+			[
+				"subml",
+				"SublimeLinter: Extract Annotations"
+			],
+			[
+				"preferences",
+				"Preferences: Settings - User"
+			],
+			[
+				"package ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 510.0
+	},
+	"console":
+	{
+		"height": 132.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Stephen/Workspace/MailService/src/Driver.java",
+		"/C/Users/Stephen/Documents/GitHub/IntelliDoro/tools/psake-v4.00.20120511/psake.psm1",
+		"/C/Users/Stephen/Documents/GitHub/IntelliDoro/tools/psake-v4.00.20120511/psake.ps1",
+		"/C/Users/Stephen/Documents/GitHub/IntelliDoro/tools/psake-v4.00.20120511/psake.cmd",
+		"/C/Users/Stephen/Documents/GitHub/IntelliDoro/tools/psake-v4.00.20120511/psake-config.ps1",
+		"/Z/_Grading/Lab1.txt",
+		"/C/Users/Stephen/Dropbox/EssentialCSharp/SCC/DEV/EssentialSharp/IntelliTect.ConsoleView/Tester.cs",
+		"/C/Users/Stephen/Documents/GitHub/IntelliDoro/build/default.ps1",
+		"/C/Users/Stephen/Documents/GitHub/IntelliDoro/src/IntelliTect.IntelliDoro/web.config",
+		"/C/Users/Stephen/Documents/GitHub/IntelliDoro/src/IntelliTect.IntelliDoro/web.Release.config",
+		"/C/Users/Stephen/Documents/GitHub/IntelliDoro/src/IntelliTect.IntelliDoro/IntelliTect.IntelliDoro.csproj.user",
+		"/C/Users/Stephen/Documents/GitHub/IntelliDoro/src/IntelliTect.IntelliDoro/IntelliDoro.css",
+		"/C/Users/Stephen/Documents/GitHub/IntelliDoro/src/IntelliTect.IntelliDoro/IntelliDoro.htm",
+		"/C/temp/CSharp/DirectCatch.cs",
+		"/C/temp/CSharp/EventObservation.cs",
+		"/C/Users/Stephen/.gitconfig",
+		"/C/Users/Focus/Dropbox/Stephen.Hoerner/EssentialCSharp5_TestsAndTranscriptions/ChapterAppC/AppendixC.01.CallingAPMOnWebRequest.cs",
+		"/C/server/htdocs/rephrase/application/controllers/testing.php",
+		"/C/Users/Focus/Dropbox/Stephen.Hoerner/EssentialCSharp5_TestsAndTranscriptions/Shared/Program.cs",
+		"/C/Users/Stephen/Documents/GitHub/EssentialCSharp5/Shared/Program.cs",
+		"/C/server/htdocs/rephrase/application/models/phraser.php",
+		"/C/server/htdocs/rephrase/application/controllers/testData/richTextDeformat.txt",
+		"/C/server/htdocs/rephrase/application/views/unit_tests.php",
+		"/C/Users/Stephen/Downloads/DriveDetector_demo/SimpleDetector/SimpleDetector/Form1.cs",
+		"/C/server/htdocs/rephrase/application/controllers/testData/sample4.txt",
+		"/C/server/htdocs/rephrase/application/controllers/testData/sample1.txt",
+		"/C/server/htdocs/rephrase/application/controllers/testData/invalidInclude.txt",
+		"/C/server/htdocs/rephrase/application/controllers/testData/validInclude.txt",
+		"/C/server/htdocs/rephrase/application/config/autoload.php",
+		"/C/server/htdocs/wedit/src/tests/PhraserTest.php",
+		"/C/server/htdocs/rephrase/application/views/include/unit_tests.php",
+		"/C/server/htdocs/rephrase/application/views/include/test_header.php",
+		"/C/server/htdocs/wedit/rephrase/include/test_header.php",
+		"/C/server/htdocs/wedit/include/test_header.php",
+		"/C/server/htdocs/rephrase/server.php",
+		"/C/server/htdocs/rephrase/index.php",
+		"/C/server/htdocs/rephrase/application/config/database.php",
+		"/C/server/htdocs/rephrase/application/config/config.php",
+		"/C/server/htdocs/wedit/src/tests/sample4.txt",
+		"/C/server/htdocs/wedit/src/tests/sample1.txt",
+		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/User/Fetch.sublime-settings",
+		"/C/server/htdocs/wedit/src/lib/Phraser.php",
+		"/C/server/htdocs/wedit/server.php",
+		"/C/server/htdocs/wedit/server.hphp",
+		"/C/server/htdocs/rephrase/test.txt",
+		"/F/action.ps1",
+		"/C/server/htdocs/wedit/editable.html",
+		"/C/server/htdocs/wedit/src/tests/sample3.txt",
+		"/C/server/htdocs/wedit/js/jquery.js",
+		"/C/server/htdocs/wedit/src/tests/sample2.txt",
+		"/C/server/apache/conf/httpd.conf",
+		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/User/SublimeLinter.sublime-settings",
+		"/C/server/htdocs/wedit/phpunit.xml",
+		"/C/server/htdocs/wedit/lib/Phraser.php",
+		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/PHPUnit/phpunit.py",
+		"/C/server/htdocs/wedit/lib/PhraserTest.php",
+		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/Terminal/Terminal.sublime-settings",
+		"/C/Windows/System32/WindowsPowerShell/v1.0/powershell.exe",
+		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/User/Terminal.sublime-settings",
+		"/C/server/htdocs/wedit/save.php",
+		"/C/server/htdocs/wedit/load.php",
+		"/C/server/htdocs/wedit/css/wedit.css",
+		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/server/htdocs/wedit/phraser.process.php",
+		"/C/server/htdocs/wedit/js/jquery.hotkeys.js",
+		"/C/server/htdocs/wedit/wedit.css",
+		"/C/Dev/EssentialCSharp5.Tests/Chapter1.cs",
+		"/C/temp/example.svg",
+		"/C/Users/Stephen/Documents/GitHub/IntelliTect.Console/IntelliTect.Console.sln",
+		"/C/Users/Stephen/Documents/GitHub/IntelliTect.Console/IntelliTect.Console.v11.suo",
+		"/C/Dev/Chapter01/Listing01.08.RemovingWhitespace.cs",
+		"/C/Users/Stephen/Downloads/twilight.vssettings",
+		"/C/Scripts/compare-files.ps1",
+		"/C/Scripts/current.ps1",
+		"/C/Dev/Chapter05/Chapter05/Listing05.29.CallingAnObjectInitializer.cs",
+		"/C/server/php/PEAR/PHPDoc/core/Phpdoc.php",
+		"/C/server/php/PEAR/PhpDocumentor/installer.php",
+		"/C/server/php/phpdoc.php",
+		"/C/server/htdocs/sigma/static/javascript/main.js",
+		"/C/server/htdocs/sigma/application/models/page.php",
+		"/C/server/htdocs/sigma/application/controllers/developer/manage.php",
+		"/C/server/htdocs/sigma/application/models/phraser.php",
+		"/C/server/htdocs/sigma/application/views/pages.php",
+		"/C/server/htdocs/sigma/application/views/manage_upload2.php",
+		"/C/server/htdocs/sigma/files/01ac231080c384660f05da21b23b978f.html",
+		"/C/server/htdocs/sigma/application/views/manage_edit_page.php",
+		"/C/server/htdocs/sigma/files/sandbox/home.html",
+		"/C/server/htdocs/sigma/application/models/content.php",
+		"/C/server/htdocs/sigma/static/css/main.css",
+		"/C/server/htdocs/sigma/application/views/pages_info.php",
+		"/C/server/htdocs/sigma/application/controllers/pages.php",
+		"/C/server/htdocs/sigma/.phr",
+		"/C/server/htdocs/sigma/static/javascript/webtoolkit.md5.js",
+		"/C/server/htdocs/sigma/application/views/manage_upload1.php",
+		"/C/server/htdocs/sigma/static/php/developer_upload.php",
+		"/C/server/htdocs/sigma/application/views/include/switch_site_overlay.php",
+		"/C/server/htdocs/sigma/application/controllers/site_settings.php",
+		"/C/server/htdocs/sigma/application/views/site_settings.php",
+		"/C/server/htdocs/sigma/system/core/Loader.php",
+		"/C/server/htdocs/pqp/index.php",
+		"/C/server/htdocs/sigma/pqp/classes/Console.php",
+		"/C/server/htdocs/sigma/application/models/profile.php",
+		"/C/server/php/php.ini",
+		"/C/server/htdocs/sigma/system/database/DB_active_rec.php",
+		"/C/server/htdocs/sigma/application/models/developer.php",
+		"/C/server/htdocs/sigma/application/controllers/site.php",
+		"/C/server/htdocs/sigma/files/ed73ebb76f72560ede0a94545a1dbce5.html",
+		"/C/server/htdocs/sigma/files/ed73ebb76f72560ede0a94545a1dbce5.phr",
+		"/C/server/htdocs/ResiteDev/phraser.class.php",
+		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/server/htdocs/sigma/server.php",
+		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/Gist/Gist.sublime-settings",
+		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/User/JSON.sublime-settings",
+		"/C/server/htdocs/sigma/files/sandbox/sample.html",
+		"/C/server/htdocs/sigma/files/sandbox/test.html",
+		"/C/server/htdocs/sigma/files/ebea0237ad58a1f059848775f5cffe59.phr",
+		"/C/server/htdocs/sigma/files/ebea0237ad58a1f059848775f5cffe59.html",
+		"/C/Users/Stephen/Downloads/cscd110raduis.py",
+		"/C/server/htdocs/sigma/application/models/accounts.php",
+		"/C/server/htdocs/sigma/application/views/account/register.php",
+		"/C/server/htdocs/sigma/application/views/manage_errors.php",
+		"/C/server/htdocs/sigma/application/controllers/account.php",
+		"/C/Users/Stephen/Documents/College/Spring Quarter 2012/Programming 210/ConditionalsLab.java",
+		"/C/server/htdocs/sigma/application/views/include/manage_side.php",
+		"/C/server/htdocs/sigma/application/views/error.php",
+		"/C/server/htdocs/sigma/files/ec2646ac54c83b2823938ac2df71d730.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"exec ",
+			"exec",
+			"error",
+			"execute",
+			"execute'",
+			"execute",
+			"exec ",
+			"include",
+			"$this->pageID",
+			"pageID",
+			"?",
+			"print",
+			"program",
+			"read",
+			"upload",
+			"die",
+			".phr",
+			"phr",
+			"strtolower",
+			"$types",
+			"insert",
+			"$page",
+			"element_settings",
+			"ucwords",
+			"__t_name",
+			"edit ",
+			"exists",
+			"link",
+			"3",
+			"this::",
+			"standardize",
+			"'import",
+			"query",
+			"->result",
+			"standardize",
+			"import",
+			"3",
+			"		if (isset($_SESSION['site_id']) && isset($_SESSION['site_domain'])) {\n				$header['site_id'] = $_SESSION['site_id'];\n				$header['domain']  = $_SESSION['site_domain'];\n			}\n			else {\n				$header['site_id'] = 0;\n				$header['domain']  = \"\";\n			}",
+			"db->",
+			"validateTags",
+			"+p",
+			"JOIN",
+			"$this->db",
+			"include",
+			"replaceincludes",
+			"'Include",
+			"rich",
+			"mysql_num_rows",
+			"select",
+			"geterrors",
+			"manage_upload",
+			"db->",
+			"							",
+			"type",
+			"get",
+			"edit_id",
+			"save",
+			"class=\"save",
+			"edit",
+			"include",
+			"savetags",
+			"'pages'",
+			"magical",
+			"pageadd",
+			"file",
+			"foreach",
+			"file_id",
+			"file",
+			"replaceIncludes",
+			"\"); ?>', $",
+			"replace",
+			">",
+			"ignore_discard",
+			"page",
+			"return",
+			"name",
+			"join",
+			"single",
+			"get",
+			"single",
+			"elements",
+			"delete",
+			"remove",
+			"			",
+			"get where",
+			"page",
+			"$this->page_id",
+			"$page_id",
+			"page",
+			"these",
+			"content",
+			"single",
+			"singleAdd",
+			"singleadd",
+			"page",
+			"get_where",
+			"getwhere",
+			"contentInit($element_id, $type)",
+			"get_where",
+			"103",
+			"{",
+			"}",
+			"{",
+			"			",
+			"die",
+			"region",
+			"type2",
+			"Type",
+			">';",
+			"imagettfbbox_t"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Rich",
+			"Text"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 98.0
+	},
+	"output.git":
+	{
+		"height": 98.0
+	},
+	"output.phpunit":
+	{
+		"height": 125.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"phr",
+				"rephrase/application/models/phraser.php"
+			],
+			[
+				"html",
+				"editable.html"
+			],
+			[
+				"phraser",
+				"src/lib/Phraser.php"
+			],
+			[
+				"phras",
+				"application/models/phraser.php"
+			],
+			[
+				"jsmain",
+				"static/javascript/main.js"
+			],
+			[
+				"upload2",
+				"application/views/manage_upload2.php"
+			],
+			[
+				"content",
+				"application/models/content.php"
+			],
+			[
+				"manage",
+				"application/controllers/developer/manage.php"
+			],
+			[
+				"home",
+				"files/sandbox/home.html"
+			],
+			[
+				"manage_ed",
+				"application/views/manage_edit_page.php"
+			],
+			[
+				"mana",
+				"application/controllers/developer/manage.php"
+			],
+			[
+				"page",
+				"application/models/page.php"
+			],
+			[
+				"mainjs",
+				"static/javascript/main.js"
+			],
+			[
+				"manageu",
+				"application/views/manage_upload2.php"
+			],
+			[
+				"pages",
+				"application/views/pages.php"
+			],
+			[
+				"pages_",
+				"application/views/pages_info.php"
+			],
+			[
+				"home.h",
+				"files/sandbox/home.html"
+			],
+			[
+				"maincss",
+				"static/css/main.css"
+			],
+			[
+				"phra",
+				"application/models/phraser.php"
+			],
+			[
+				"siwtch",
+				"application/views/include/switch_site_overlay.php"
+			],
+			[
+				"viewsite_set",
+				"application/views/site_settings.php"
+			],
+			[
+				"site_sett",
+				"application/controllers/site_settings.php"
+			],
+			[
+				"main",
+				"static/css/main.css"
+			],
+			[
+				"manage_upload",
+				"application/views/manage_upload2.php"
+			],
+			[
+				"home.",
+				"files/sandbox/home.html"
+			],
+			[
+				"devupload",
+				"static/php/developer_upload.php"
+			],
+			[
+				"manage_uplo",
+				"application/views/manage_upload1.php"
+			],
+			[
+				"profile",
+				"application/models/profile.php"
+			],
+			[
+				"loader",
+				"system/core/Loader.php"
+			],
+			[
+				"dba",
+				"system/database/DB_active_rec.php"
+			],
+			[
+				"site",
+				"sigma/application/controllers/site.php"
+			],
+			[
+				"page.",
+				"sigma/application/models/page.php"
+			],
+			[
+				"controllers",
+				"sigma/application/controllers/pages.php"
+			],
+			[
+				"",
+				"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"resite",
+				"/C/server/htdocs/Resite.sublime-project"
+			],
+			[
+				"res",
+				"/C/server/htdocs/Resite.sublime-project"
+			],
+			[
+				"scripts",
+				"/C/Scripts/Scripts.sublime-project"
+			],
+			[
+				"pro",
+				"/C/Users/Stephen/Documents/College/Spring Quarter 2012/Programming 210/Programming.sublime-project"
+			],
+			[
+				"pr",
+				"/C/Users/Stephen/Documents/College/Spring Quarter 2012/Programming 210/Programming.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 222.0,
+	"status_bar_visible": true
+}
