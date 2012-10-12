@@ -1,5 +1,7 @@
+import java.util.Scanner;
 
-public abstract class Hero extends DungeonCharactor
+
+public abstract class Hero extends DungeonCharacter
 {
 	protected int blockChance;
 	protected String specialAttack = "Cower in Fear";
@@ -13,12 +15,12 @@ public abstract class Hero extends DungeonCharactor
 	}
 
 	@Override
-	public void attack(DungeonCharactor other)
+	public void attack(DungeonCharacter other)
 	{
 		if (!this.isLiving() || !other.isLiving())
 			return;
 
-		if (turnNumber = 0)
+		if (turnNumber == 0)
 		{
 			turnNumber = getAttackRatio(other);
 		}
@@ -32,7 +34,7 @@ public abstract class Hero extends DungeonCharactor
 			System.out.println("\t2) " + specialAttack);
 			System.out.println("Enter an attack: ");
 
-			if (new Int(kb.nextLine()) == 2)
+			if (Integer.parseint(kb.nextLine()) == 2)
 				specialAttack(other);
 			else
 				super.attack(other);
@@ -40,22 +42,22 @@ public abstract class Hero extends DungeonCharactor
 			System.out.println();
 
 			if (--turnNumber > 0 && other.health > 0)
-				attack();
+				attack(other);
 		}
 	}
 
-	public void attack(DungeonCharactor other, boolean default)
+	public void attack(DungeonCharacter other, boolean normal)
 	{
 		if (!this.isLiving() || !other.isLiving())
 			return;
 
-		if (default)
-			super(other);
+		if (normal)
+			super.attack(other);
 		else 
-			this(other);
+			attack(other);
 	}
 
-	private void specialAttack(DungeonCharactor other)
+	private void specialAttack(DungeonCharacter other)
 	{
 		// does nothing at this level
 	}
@@ -74,6 +76,6 @@ public abstract class Hero extends DungeonCharactor
 		if (rand.nextInt(100) < blockChance)
 			System.out.println("Attack blocked!");
 		else
-			super(amount);
+			super.removeHealth(amount);
 	}
 }

@@ -1,5 +1,5 @@
 
-public abstract class Monster extends DungeonCharactor
+public abstract class Monster extends DungeonCharacter
 {
 	protected int healChance;
 	protected int maxHeal;
@@ -9,12 +9,13 @@ public abstract class Monster extends DungeonCharactor
 	{
 		super(name, health, attackSpeed, rangeMin, rangeMax, hitChance);
 
-		this.blockChance = blockChance;
-		this.name = getInputName();
+		this.healChance = healChance;
+		this.maxHeal = maxHeal;
+		this.minHeal = minHeal;
 	}
 
 	@Override
-	public void attack(DungeonCharactor other)
+	public void attack(DungeonCharacter other)
 	{
 		if (!this.isLiving() || !other.isLiving())
 			return;
@@ -47,7 +48,7 @@ public abstract class Monster extends DungeonCharactor
 	@Override
 	public void removeHealth(int amount)
 	{
-		super(amount);
+		super.removeHealth(amount);
 
 		if (health > 0)
 			heal();

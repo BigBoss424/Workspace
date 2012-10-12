@@ -1,8 +1,12 @@
 
+import java.util.Random;
+import java.util.Scanner;
+
 public class HeroesVersusMonsters {
 
-	Hero hero;
-	Monster monster;
+	private static Hero hero;
+	private static Monster monster;
+	private static Random rand = new Random();
 
 	public static void main(String[] args)
 	{
@@ -11,9 +15,9 @@ public class HeroesVersusMonsters {
 		do 
 		{
 			System.out.println("Heroes: ");
-			System.out.println("\t1) Warrior")
-			System.out.println("\t2) Sorceress")
-			System.out.println("\t3) Thief")
+			System.out.println("\t1) Warrior");
+			System.out.println("\t2) Sorceress");
+			System.out.println("\t3) Thief");
 			System.out.print("Which path will you choose? ");
 
 			int type = kb.nextInt();
