@@ -14,8 +14,32 @@ public class Warrior extends Hero
 			int damage = rand.nextInt(75) + 101;
 			other.removeHealth(damage);
 			System.out.println("You landed a CRUSHING blow for " + damage + "health!");
+
+			if (other.health <= 0) 
+				System.out.println(other.name + " now has no health.");
+			else
+				System.out.println(other.name + " now has " + other.health + " health.");
 		}
 		else
 			System.out.println("You were distracted by a fly and crushed it instead. :(");
+	}
+
+	public static String getTitle()
+	{
+		switch (rand.nextInt(3))
+		{
+			case 0:
+				return " the Slicer";
+			case 1:
+				return " the Amazing";
+			case 2:
+				return " the Brave";
+		}
+	}
+
+	@Override
+	private void specialAttack(DungeonCharacter other)
+	{
+		crushingBlow(other);
 	}
 }

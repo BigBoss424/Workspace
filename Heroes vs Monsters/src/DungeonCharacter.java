@@ -11,7 +11,8 @@ public abstract class DungeonCharacter
 	protected int rangeMin;
 	protected int rangeMax;
 	protected int hitChance;
-
+	protected int turnNumber = 0;
+	
 	public DungeonCharacter(String name, int health, int attackSpeed, int rangeMin, int rangeMax, int hitChance)
 	{
 		this.name = name;
@@ -22,25 +23,32 @@ public abstract class DungeonCharacter
 		this.hitChance = hitChance;
 	}
 
-	// returns true if the enemy died
+	public boolean isLiving()
+	{
+		return health > 0;
+	}
+
 	public void attack(DungeonCharacter other)
 	{
+		if (!this.isLiving() || !other.isLiving())
+			return;
+		
 		if (rand.nextInt(100) < hitChance)
 		{
 			int damage = rand.nextInt(rangeMax - rangeMin + 1) + rangeMin;
 
 			removeHealth(damage);
 
-			System.out.println("Struck for " + damage + "damage.");
+			System.out.println(name + " struck for " + damage + " damage.");
 
 			if (other.health <= 0)
-				System.out.println(name + "now has no health.");
+				System.out.println(other.name + " now has no health.");
 			else
-				System.out.println(name + " now has " + other.health + " health.");
+				System.out.println(other.name + " now has " + other.health + " health.");
 		}
 		else
 		{
-			System.out.println("Attack missed!");
+			System.out.println(name + " missed while trying to attack!");
 		}
 	}
 
