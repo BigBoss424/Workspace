@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"attack",
+				"attackSpeed"
+			],
+			[
+				"atta",
+				"attackSpeed"
+			],
+			[
+				"range",
+				"rangeMax"
+			],
+			[
+				"ra",
+				"rangeMin"
+			],
+			[
 				"style",
 				"list-style:   (property)"
 			],
@@ -47,6 +63,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/C/Users/Stephen/Downloads/index/_Grading/Assignment 1/BB Download/Assignment__1___Radius_Functions_0195621_FunctionsProgram.py",
+			"settings":
+			{
+				"buffer_size": 2233,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "Packages/Java/JavaC.sublime-build",
 	"command_palette":
@@ -208,6 +232,17 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Stephen/Workspace/Heroes vs Monsters/src/Warrior.java",
+		"/C/Users/Stephen/Workspace/Heroes vs Monsters/src/Monster.java",
+		"/C/Users/Stephen/Workspace/Heroes vs Monsters/src/Hero.java",
+		"/C/Users/Stephen/Workspace/Heroes vs Monsters/src/DungeonCharacter.java",
+		"/C/Users/Stephen/Workspace/Heroes vs Monsters/src/HeroesVersusMonsters.java",
+		"/C/Users/Stephen/Workspace/Heroes vs Monsters/src/Thief.java",
+		"/C/Users/Stephen/Downloads/index.php",
+		"/C/Users/Stephen/Workspace/Heroes vs Monsters/src/Sorceress.java",
+		"/C/Users/Stephen/Workspace/Heroes vs Monsters/src/Skeleton.java",
+		"/C/Users/Stephen/Workspace/Heroes vs Monsters/src/Gremlin.java",
+		"/C/Users/Stephen/Workspace/Heroes vs Monsters/src/Ogre.java",
 		"/C/Users/Stephen/Workspace/MailService/src/Driver.java",
 		"/C/Users/Stephen/Documents/GitHub/IntelliDoro/tools/psake-v4.00.20120511/psake.psm1",
 		"/C/Users/Stephen/Documents/GitHub/IntelliDoro/tools/psake-v4.00.20120511/psake.ps1",
@@ -324,18 +359,7 @@
 		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/Gist/Gist.sublime-settings",
 		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/User/JSON.sublime-settings",
 		"/C/server/htdocs/sigma/files/sandbox/sample.html",
-		"/C/server/htdocs/sigma/files/sandbox/test.html",
-		"/C/server/htdocs/sigma/files/ebea0237ad58a1f059848775f5cffe59.phr",
-		"/C/server/htdocs/sigma/files/ebea0237ad58a1f059848775f5cffe59.html",
-		"/C/Users/Stephen/Downloads/cscd110raduis.py",
-		"/C/server/htdocs/sigma/application/models/accounts.php",
-		"/C/server/htdocs/sigma/application/views/account/register.php",
-		"/C/server/htdocs/sigma/application/views/manage_errors.php",
-		"/C/server/htdocs/sigma/application/controllers/account.php",
-		"/C/Users/Stephen/Documents/College/Spring Quarter 2012/Programming 210/ConditionalsLab.java",
-		"/C/server/htdocs/sigma/application/views/include/manage_side.php",
-		"/C/server/htdocs/sigma/application/views/error.php",
-		"/C/server/htdocs/sigma/files/ec2646ac54c83b2823938ac2df71d730.html"
+		"/C/server/htdocs/sigma/files/sandbox/test.html"
 	],
 	"find":
 	{
@@ -353,6 +377,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".\");",
 			"exec ",
 			"exec",
 			"error",
@@ -482,8 +507,37 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/Stephen/Downloads/index/_Grading/Assignment 1/BB Download/Assignment__1___Radius_Functions_0195621_FunctionsProgram.py",
+					"settings":
+					{
+						"buffer_size": 2233,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								288,
+								288
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -520,7 +574,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 98.0
+		"height": 248.0
 	},
 	"output.git":
 	{
@@ -540,6 +594,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"ogre",
+				"src/Ogre.java"
+			],
+			[
+				"greml",
+				"src/Gremlin.java"
+			],
 			[
 				"phr",
 				"rephrase/application/models/phraser.php"
@@ -707,10 +769,10 @@
 		],
 		"width": 380.0
 	},
-	"show_minimap": true,
+	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 222.0,
+	"side_bar_width": 243.0,
 	"status_bar_visible": true
 }

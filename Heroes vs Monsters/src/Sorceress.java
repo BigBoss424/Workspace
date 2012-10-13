@@ -1,9 +1,9 @@
 
 public class Sorceress extends Hero
 {
-	public Sorceress(String name)
+	public Sorceress()
 	{
-		super(name, 75, 5, 25, 45, 70, 30);
+		super(75, 5, 25, 45, 70, 30);
 		this.specialAttack = "Blood Transfusion";
 	}
 
@@ -12,9 +12,10 @@ public class Sorceress extends Hero
 		int heal = rand.nextInt(50) + 26;
 		this.health += heal;
 		System.out.println("Using your enemy's blood (you're rather creepy, aren't you?), you managed to restore " + heal + " health.");
+		System.out.println("You now have " + this.health + " health.");
 	}
 
-	public static String getTitle()
+	protected String getTitle()
 	{
 		switch (rand.nextInt(3))
 		{
@@ -22,13 +23,13 @@ public class Sorceress extends Hero
 				return " the Zapper";
 			case 1:
 				return " the Fiesty";
-			case 2:
+			default:
 				return " the Flashy";
 		}
 	}
 
 	@Override
-	private void specialAttack(DungeonCharacter other)
+	protected void specialAttack(DungeonCharacter other)
 	{
 		bloodTransfusion();
 	}

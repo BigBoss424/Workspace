@@ -6,12 +6,12 @@ public abstract class Hero extends DungeonCharacter
 	protected int blockChance;
 	protected String specialAttack = "Cower in Fear";
 
-	public Hero(String name, int health, int attackSpeed, int rangeMin, int rangeMax, int hitChance, int blockChance)
+	public Hero(int health, int attackSpeed, int rangeMin, int rangeMax, int hitChance, int blockChance)
 	{
-		super(name, health, attackSpeed, rangeMin, rangeMax, hitChance);
+		super("", health, attackSpeed, rangeMin, rangeMax, hitChance);
 
 		this.blockChance = blockChance;
-		this.name = getInputName();
+		this.name = getInputName() + this.getTitle();
 	}
 
 	@Override
@@ -26,22 +26,40 @@ public abstract class Hero extends DungeonCharacter
 		}
 		else 
 		{
-			System.out.println("Turns to attack: " + turnNumber);
+			System.out.println("\nTurns to attack: " + turnNumber);
 			Scanner kb = new Scanner(System.in);
 			
 			System.out.println("Attack Options:");
 			System.out.println("\t1) Normal");
 			System.out.println("\t2) " + specialAttack);
+			System.out.println("\t3) Flee");
 			System.out.println("Enter an attack: ");
 
-			if (Integer.parseint(kb.nextLine()) == 2)
-				specialAttack(other);
-			else
-				super.attack(other);
+			while (true)
+			{
+				try
+				{
+					int option = Integer.parseInt(kb.nextLine());
+					System.out.println();
+					
+					if (option == 2)
+						specialAttack(other);
+					else if (option == 3)
+						this.health = 0;
+					else
+						super.attack(other);
+					
+					break;
+				}
+				catch (Exception e)
+				{
+					// nothing...
+				}
+			}
 
 			System.out.println();
 
-			if (--turnNumber > 0 && other.health > 0)
+			if (--turnNumber > 0 && this.health > 0 && other.health > 0)
 				attack(other);
 		}
 	}
@@ -57,11 +75,9 @@ public abstract class Hero extends DungeonCharacter
 			attack(other);
 	}
 
-	private void specialAttack(DungeonCharacter other)
-	{
-		// does nothing at this level
-	}
-
+	protected abstract void specialAttack(DungeonCharacter other);
+	protected abstract String getTitle();
+	
 	private String getInputName()
 	{
 		Scanner kb = new Scanner(System.in);

@@ -1,9 +1,9 @@
 
 public class Warrior extends Hero
 {
-	public Warrior(String name)
+	public Warrior()
 	{
-		super(name, 125, 4, 35, 60, 80, 20);
+		super(125, 4, 35, 60, 80, 20);
 		this.specialAttack = "Crushing Blow";
 	}
 
@@ -13,7 +13,7 @@ public class Warrior extends Hero
 		{
 			int damage = rand.nextInt(75) + 101;
 			other.removeHealth(damage);
-			System.out.println("You landed a CRUSHING blow for " + damage + "health!");
+			System.out.println("You landed a CRUSHING blow for " + damage + " health!");
 
 			if (other.health <= 0) 
 				System.out.println(other.name + " now has no health.");
@@ -24,7 +24,7 @@ public class Warrior extends Hero
 			System.out.println("You were distracted by a fly and crushed it instead. :(");
 	}
 
-	public static String getTitle()
+	protected String getTitle()
 	{
 		switch (rand.nextInt(3))
 		{
@@ -32,13 +32,13 @@ public class Warrior extends Hero
 				return " the Slicer";
 			case 1:
 				return " the Amazing";
-			case 2:
+			default:
 				return " the Brave";
 		}
 	}
 
 	@Override
-	private void specialAttack(DungeonCharacter other)
+	protected void specialAttack(DungeonCharacter other)
 	{
 		crushingBlow(other);
 	}

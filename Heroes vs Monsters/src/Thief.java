@@ -1,9 +1,9 @@
 
 public class Thief extends Hero
 {
-	public Thief(String name)
+	public Thief()
 	{
-		super(name, 75, 6, 20, 40, 80, 40);
+		super(75, 6, 20, 40, 80, 40);
 		this.specialAttack = "Surprise Attack";
 	}
 
@@ -17,12 +17,12 @@ public class Thief extends Hero
 		}
 		else if (rand.nextInt(100) < 20)
 		{
-			System.out.println("You were seen by the enemy and could not safely attack.")
+			System.out.println("You were seen by the enemy and could not safely attack.");
 		}
 		else
 		{
 			int damage = rand.nextInt(rangeMax - rangeMin + 1) + rangeMin;
-			removeHealth(damage);
+			other.removeHealth(damage);
 
 			System.out.println("Though not a total surprise, you managed to hit the enemy for " + damage + " damage.");
 
@@ -33,7 +33,7 @@ public class Thief extends Hero
 		}
 	}
 
-	public static String getTitle()
+	protected String getTitle()
 	{
 		switch (rand.nextInt(3))
 		{
@@ -41,13 +41,13 @@ public class Thief extends Hero
 				return " the Stealthy";
 			case 1:
 				return " the Surprising";
-			case 2:
+			default:
 				return " the Timid";
 		}
 	}
 
 	@Override
-	private void specialAttack(DungeonCharacter other)
+	protected void specialAttack(DungeonCharacter other)
 	{
 		surpriseAttack(other);
 	}

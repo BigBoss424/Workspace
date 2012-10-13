@@ -30,21 +30,19 @@ public class HeroesVersusMonsters {
 
 				type = kb.nextInt();
 				kb.nextLine();
+				System.out.println();
 			}
-
-			System.out.print("Enter its name: ");
-			String heroName = kb.nextLine();
 
 			switch (type)
 			{
 				case 1:
-					hero = new Warrior(heroName + Warrior.getTitle());
+					hero = new Warrior();
 					break;
 				case 2:
-					hero = new Sorceress(heroName + Sorceress.getTitle());
+					hero = new Sorceress();
 					break;
 				case 3:
-					hero = new Thief(heroName + Thief.getTitle());
+					hero = new Thief();
 					break;
 			}
 
@@ -60,25 +58,18 @@ public class HeroesVersusMonsters {
 					monster = new Gremlin("Grankle the Gremlin");
 			}
 
+			System.out.println("\nYou are fighting against " + monster.getName() + "!");
+			
 			while (hero.isLiving() && monster.isLiving())
 			{
-
-				System.out.println("Give up? (press Y) ");
-
-				if (kb.nextLine().toUpperCase().trim() != "Y")
-				{
-					System.out.println("Haha, you LOST!");
-					break;
-				}
-
 				hero.attack(monster);
 				monster.attack(hero);
 			}
 
 			System.out.print("Play again? (y/n) ");
 
-			if (kb.nextLine().toUpperCase().trim() != "Y")
-				break;
+			/*if (kb.nextLine().toUpperCase().trim() != "Y")
+				break;*/
 		}
 		while (true);
 	}

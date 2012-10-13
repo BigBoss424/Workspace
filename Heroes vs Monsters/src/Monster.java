@@ -20,16 +20,21 @@ public abstract class Monster extends DungeonCharacter
 		if (!this.isLiving() || !other.isLiving())
 			return;
 
-		if (turnNumber = 0)
+		if (turnNumber == 0)
 			turnNumber = getAttackRatio(other);
 		else 
 		{
 			super.attack(other);
 			if (--turnNumber > 0 && other.health > 0)
-				attack();
+				attack(other);
 		}
 	}
 
+	public String getName()
+	{
+		return name;
+	}
+	
 	private void heal()
 	{
 		if (rand.nextInt(100) < healChance)

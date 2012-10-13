@@ -3,7 +3,7 @@ import java.util.Random;
 
 public abstract class DungeonCharacter
 {
-	protected Random rand = new Random();
+	protected static Random rand = new Random();
 
 	protected String name;
 	protected int health;
@@ -37,7 +37,7 @@ public abstract class DungeonCharacter
 		{
 			int damage = rand.nextInt(rangeMax - rangeMin + 1) + rangeMin;
 
-			removeHealth(damage);
+			other.removeHealth(damage);
 
 			System.out.println(name + " struck for " + damage + " damage.");
 
@@ -59,6 +59,6 @@ public abstract class DungeonCharacter
 
 	public int getAttackRatio(DungeonCharacter other)
 	{
-		return (this.attackSpeed/other.attackSpeed > 0) this.attackSpeed/other.attackSpeed ? 1;
+		return (this.attackSpeed/other.attackSpeed > 0) ? this.attackSpeed/other.attackSpeed : 1;
 	}
 }
