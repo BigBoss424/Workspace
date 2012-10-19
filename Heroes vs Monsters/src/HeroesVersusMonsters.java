@@ -1,3 +1,6 @@
+// Stephen Hoerner
+// Last tweaked 10/19/12
+// No extra credit attempted
 
 import java.util.Random;
 import java.util.Scanner;
@@ -68,8 +71,13 @@ public class HeroesVersusMonsters {
 
 			System.out.print("Play again? (y/n) ");
 
-			/*if (kb.nextLine().toUpperCase().trim() != "Y")
-				break;*/
+			String tester = kb.nextLine().toUpperCase();
+			tester = tester.trim();
+			
+			if (tester.equals("N"))
+				break;
+			else
+				System.out.println();
 		}
 		while (true);
 	}

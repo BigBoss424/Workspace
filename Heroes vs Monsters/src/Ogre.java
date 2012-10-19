@@ -1,3 +1,4 @@
+// Stephen Hoerner
 
 public class Ogre extends Monster
 {

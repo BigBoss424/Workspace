@@ -1,5 +1,6 @@
-import java.util.Scanner;
+// Stephen Hoerner
 
+import java.util.Scanner;
 
 public abstract class Hero extends DungeonCharacter
 {
@@ -32,8 +33,8 @@ public abstract class Hero extends DungeonCharacter
 			System.out.println("Attack Options:");
 			System.out.println("\t1) Normal");
 			System.out.println("\t2) " + specialAttack);
-			System.out.println("\t3) Flee");
-			System.out.println("Enter an attack: ");
+			System.out.println("\t3) Flee (exit)");
+			System.out.print("Enter an attack: ");
 
 			while (true)
 			{
@@ -81,7 +82,7 @@ public abstract class Hero extends DungeonCharacter
 	private String getInputName()
 	{
 		Scanner kb = new Scanner(System.in);
-		System.out.println("Enter your hero's name: ");
+		System.out.print("Enter your hero's name: ");
 
 		return kb.nextLine();
 	}

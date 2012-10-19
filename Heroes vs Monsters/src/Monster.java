@@ -1,3 +1,4 @@
+// Stephen Hoerner
 
 public abstract class Monster extends DungeonCharacter
 {

@@ -1,3 +1,4 @@
+// Stephen Hoerner
 
 public class Thief extends Hero
 {
