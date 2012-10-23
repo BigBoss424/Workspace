@@ -1,9 +1,16 @@
 
+// Stephen Hoerner
+
 public abstract class LongInteger
 {
 	long val;
 	
 	public LongInteger(long value)
+	{
+		val = value;
+	}
+	
+	public LongInteger(long value, String typeName)
 	{
 		val = value;
 	}
@@ -43,16 +50,16 @@ public abstract class LongInteger
 		switch (other.getClass().getSimpleName())
 		{
 			case "BinaryInteger":
-				return new BinaryInteger(String.valueOf(value));
+				return new BinaryInteger(Long.toBinaryString(value));
 			
 			case "OctalInteger":
-				return new OctalInteger(String.valueOf(value));
+				return new OctalInteger(Long.toOctalString(value));
 				
 			case "HexInteger":
-				return new HexInteger(String.valueOf(value));
+				return new HexInteger(Long.toHexString(value));
 				
 			default:
-				return new DecInteger(String.valueOf(value));
+				return new DecInteger(Long.toString(value));
 		}
 	}
 }
