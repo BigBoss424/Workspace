@@ -1,4 +1,3 @@
-
 // Stephen Hoerner
 
 public class HexInteger extends LongInteger
@@ -7,7 +6,8 @@ public class HexInteger extends LongInteger
 	{
 		super(Long.parseLong(value, 16));
 	}
-	
+
+	@Override
 	public String toString()
 	{
 		return Long.toHexString(val) + " (hex)";

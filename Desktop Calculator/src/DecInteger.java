@@ -1,4 +1,3 @@
-
 // Stephen Hoerner
 
 public class DecInteger extends LongInteger
@@ -7,7 +6,8 @@ public class DecInteger extends LongInteger
 	{
 		super(Long.parseLong(value, 10));
 	}
-	
+
+	@Override
 	public String toString()
 	{
 		return val + " (decimal)";

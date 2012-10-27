@@ -64,10 +64,10 @@
 	"buffers":
 	[
 		{
-			"file": "/C/Users/Stephen/Downloads/index/_Grading/Assignment 1/BB Download/Assignment__1___Radius_Functions_0195621_FunctionsProgram.py",
+			"file": "Heroes vs Monsters/src/DungeonCharacter.java",
 			"settings":
 			{
-				"buffer_size": 2233,
+				"buffer_size": 1449,
 				"line_ending": "Windows"
 			}
 		}
@@ -75,15 +75,15 @@
 	"build_system": "Packages/Java/JavaC.sublime-build",
 	"command_palette":
 	{
-		"height": 111.0,
+		"height": 375.0,
 		"selected_items":
 		[
 			[
-				"disable",
-				"Package Control: Disable Package"
+				"package",
+				"Package Control: List Packages"
 			],
 			[
-				"package",
+				"disable",
 				"Package Control: Disable Package"
 			],
 			[
@@ -215,7 +215,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 510.0
+		"width": 522.0
 	},
 	"console":
 	{
@@ -232,11 +232,14 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Stephen/Workspace/Heroes vs Monsters/src/HeroesVersusMonsters.java",
+		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/Java/JavaC.sublime-build",
+		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/Java/JavaC + Run.sublime-build",
+		"/C/Users/Stephen/Downloads/index/_Grading/Assignment 1/BB Download/Assignment__1___Radius_Functions_0195621_FunctionsProgram.py",
 		"/C/Users/Stephen/Workspace/Heroes vs Monsters/src/Warrior.java",
 		"/C/Users/Stephen/Workspace/Heroes vs Monsters/src/Monster.java",
 		"/C/Users/Stephen/Workspace/Heroes vs Monsters/src/Hero.java",
 		"/C/Users/Stephen/Workspace/Heroes vs Monsters/src/DungeonCharacter.java",
-		"/C/Users/Stephen/Workspace/Heroes vs Monsters/src/HeroesVersusMonsters.java",
 		"/C/Users/Stephen/Workspace/Heroes vs Monsters/src/Thief.java",
 		"/C/Users/Stephen/Downloads/index.php",
 		"/C/Users/Stephen/Workspace/Heroes vs Monsters/src/Sorceress.java",
@@ -356,10 +359,7 @@
 		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/server/htdocs/sigma/server.php",
 		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/Gist/Gist.sublime-settings",
-		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/User/JSON.sublime-settings",
-		"/C/server/htdocs/sigma/files/sandbox/sample.html",
-		"/C/server/htdocs/sigma/files/sandbox/test.html"
+		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/Gist/Gist.sublime-settings"
 	],
 	"find":
 	{
@@ -512,25 +512,24 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Users/Stephen/Downloads/index/_Grading/Assignment 1/BB Download/Assignment__1___Radius_Functions_0195621_FunctionsProgram.py",
+					"file": "Heroes vs Monsters/src/DungeonCharacter.java",
 					"settings":
 					{
-						"buffer_size": 2233,
+						"buffer_size": 1449,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								288,
-								288
+								84,
+								84
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -746,6 +745,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"web",
+				"/C/Users/Stephen/Web/Web Projects.sublime-project"
+			],
 			[
 				"resite",
 				"/C/server/htdocs/Resite.sublime-project"

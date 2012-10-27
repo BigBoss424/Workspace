@@ -5,6 +5,7 @@
  * CSCD 211 ~ Assignment #4
  * 
  * No external code used.
+ * Extra credit NOT attempted.
  * 
  */
 
@@ -17,22 +18,22 @@ public class IntDriver
 	private static LongInteger num2;
 	private static int opr = 0;
 	private static int mode = 0;
-	
+
 	// this makes printing easier
 	private final static String[] OPERATORS = { "", "+", "-", "*", "/" };
-	
+
 	public static void main(String[] args)
 	{
 		String input;
 		Scanner kb = new Scanner(System.in);
-		
+
 		boolean running = true;
-		
+
 		// continue running until user exits
 		while (running)
 		{
 			displayMenu();
-			
+
 			// infinite loop for valid input
 			while (true)
 			{
@@ -40,11 +41,11 @@ public class IntDriver
 				{
 					System.out.print("Option or value -->  ");
 					input = kb.nextLine();
-					
+
 					// interpret the choice
 					switch (input.toLowerCase())
 					{
-						// modes
+					// modes
 						case "dcm":
 						case "dec":
 						case "decimal":
@@ -62,14 +63,14 @@ public class IntDriver
 						case "hexadecimal":
 							mode = 3;
 							break;
-						
+
 						// quitting
 						case "q":
 						case "quit":
 							System.out.println("Bye.");
 							running = false;
 							break;
-							
+
 						// operators
 						case "+":
 							opr = 1;
@@ -83,18 +84,20 @@ public class IntDriver
 						case "/":
 							opr = 4;
 							break;
-							
+
 						// operate
 						case "=":
-							// if the operation works out, remove the old operator
+							// if the operation works out, remove the old
+							// operator
 							operate();
 							break;
-						
+
 						// turn input into number
-						default:							
+						default:
 							LongInteger temp;
-							
-							// determine type (exceptions will be thrown if input is invalid)
+
+							// determine type (exceptions will be thrown if
+							// input is invalid)
 							switch (mode)
 							{
 								case 1:
@@ -110,7 +113,7 @@ public class IntDriver
 									temp = new DecInteger(input);
 									break;
 							}
-							
+
 							// assign to correct slot
 							if (num1 == null)
 							{
@@ -125,7 +128,7 @@ public class IntDriver
 								}
 								num2 = temp;
 							}
-							
+
 							break;
 					}
 					// if we've reached this break, the input is valid
@@ -133,16 +136,17 @@ public class IntDriver
 				}
 				catch (UnsupportedOperationException e)
 				{
-					System.out.println("Invalid option; operator not specified.\n");
+					System.out
+							.println("Invalid option; operator not specified.\n");
 				}
 				catch (Exception e)
 				{
 					System.out.println("Invalid option.\n");
 				}
 			}
-		}	
+		}
 	}
-	
+
 	// applies the correct operator to the two number objects
 	private static void operate() throws Exception
 	{
@@ -151,7 +155,7 @@ public class IntDriver
 		{
 			throw new Exception("Not enough numbers.");
 		}
-		
+
 		switch (opr)
 		{
 			case 1:
@@ -169,16 +173,16 @@ public class IntDriver
 			default:
 				throw new Exception("Invalid operator.");
 		}
-		
+
 		// clear the second number & the operator's value
 		num2 = null;
 		opr = 0;
 	}
-	
+
 	private static void displayMenu()
 	{
 		System.out.println();
-		
+
 		// print the current mode
 		switch (mode)
 		{
@@ -195,17 +199,23 @@ public class IntDriver
 				System.out.println("[Decimal]");
 				break;
 		}
-		
+
 		// print the current expression
 		if (num1 != null)
+		{
 			System.out.print(num1 + "\t");
-		
+		}
+
 		if (opr != 0)
+		{
 			System.out.print(OPERATORS[opr] + "\t");
-			
+		}
+
 		if (num2 != null)
-				System.out.print(num2);
-		
+		{
+			System.out.print(num2);
+		}
+
 		// print the actual menu
 		System.out.println("\n");
 		System.out.println("Bin - Binary        +");
