@@ -70,6 +70,14 @@
 				"buffer_size": 1449,
 				"line_ending": "Windows"
 			}
+		},
+		{
+			"file": "Recursive Descent Parser/src/SubstringGenerator.java",
+			"settings":
+			{
+				"buffer_size": 429,
+				"line_ending": "Windows"
+			}
 		}
 	],
 	"build_system": "Packages/Java/JavaC.sublime-build",
@@ -507,7 +515,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -530,6 +538,32 @@
 						{
 							"syntax": "Packages/Java/Java.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Recursive Descent Parser/src/SubstringGenerator.java",
+					"settings":
+					{
+						"buffer_size": 429,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								213,
+								213
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -776,6 +810,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 243.0,
+	"side_bar_width": 180.0,
 	"status_bar_visible": true
 }
