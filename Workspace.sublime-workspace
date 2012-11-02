@@ -63,22 +63,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "Heroes vs Monsters/src/DungeonCharacter.java",
-			"settings":
-			{
-				"buffer_size": 1449,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Recursive Descent Parser/src/SubstringGenerator.java",
-			"settings":
-			{
-				"buffer_size": 429,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "Packages/Java/JavaC.sublime-build",
 	"command_palette":
@@ -240,6 +224,8 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Stephen/Workspace/Recursive Descent Parser/src/SubstringGenerator.java",
+		"/C/Users/Stephen/Workspace/Heroes vs Monsters/src/DungeonCharacter.java",
 		"/C/Users/Stephen/Workspace/Heroes vs Monsters/src/HeroesVersusMonsters.java",
 		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/Java/JavaC.sublime-build",
 		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/Java/JavaC + Run.sublime-build",
@@ -247,7 +233,6 @@
 		"/C/Users/Stephen/Workspace/Heroes vs Monsters/src/Warrior.java",
 		"/C/Users/Stephen/Workspace/Heroes vs Monsters/src/Monster.java",
 		"/C/Users/Stephen/Workspace/Heroes vs Monsters/src/Hero.java",
-		"/C/Users/Stephen/Workspace/Heroes vs Monsters/src/DungeonCharacter.java",
 		"/C/Users/Stephen/Workspace/Heroes vs Monsters/src/Thief.java",
 		"/C/Users/Stephen/Downloads/index.php",
 		"/C/Users/Stephen/Workspace/Heroes vs Monsters/src/Sorceress.java",
@@ -366,8 +351,7 @@
 		"/C/server/htdocs/ResiteDev/phraser.class.php",
 		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/server/htdocs/sigma/server.php",
-		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/Gist/Gist.sublime-settings"
+		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings"
 	],
 	"find":
 	{
@@ -515,62 +499,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "Heroes vs Monsters/src/DungeonCharacter.java",
-					"settings":
-					{
-						"buffer_size": 1449,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								84,
-								84
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Java/Java.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Recursive Descent Parser/src/SubstringGenerator.java",
-					"settings":
-					{
-						"buffer_size": 429,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								213,
-								213
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Java/Java.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -779,6 +709,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"mag",
+				"/C/server/htdocs/MagicalResite/MagicalResite.sublime-project"
+			],
 			[
 				"web",
 				"/C/Users/Stephen/Web/Web Projects.sublime-project"
