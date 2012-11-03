@@ -25,6 +25,7 @@ public class Maze
     
     // helper fields
     private int width, height;
+    private boolean awesomeMode = false;
     
 	/**
 	 * Constructs a default Maze object.
@@ -40,8 +41,8 @@ public class Maze
 	 * grid values. Verifies that the maze has adequate
 	 * dimensions.
 	 * 
-	 * @param grid the custom maze grid
-	 * @throws IllegalArgumentException
+	 * @param grid  the custom maze grid
+	 * @throws IllegalArgumentException  if the dimensions were invalid
 	 */
     public Maze(int[][] grid) throws IllegalArgumentException
     {
@@ -58,26 +59,42 @@ public class Maze
     }
     
 	/**
-	 * Prints the values of the maze to the screen.
+	 * Returns the Maze in a viewable format. Each row 
+	 * is on a line, with each column separated by a space.
+	 * 
+	 * @return the Maze as a string
 	 */
-    public void displayGrid()
+    public String toString()
     {
+    	String str = "";
+    	
     	for (int[] row : grid)
     	{
-    		String str = "";
     		for (int col : row)
     		{
-    			str += col + " ";
+    			if (!awesomeMode)
+    				str += col + " ";
+    			else if (col == 0)
+    				str += "| ";
+    			else if (col == 7)
+    				str += "• ";
     		}
-    		System.out.println(str);
+    		str += "\n";
     	}
+    	
+    	return str;
+    }
+    
+    public void beAwesome()
+    {
+    	awesomeMode = true;
     }
     
 	/**
 	 * Simple-looking method that recursively
 	 * solves the entire maze.
 	 * 
-	 * @returns boolean whether a solution was found
+	 * @return whether a solution was found
 	 */
     public boolean solve()
     {
@@ -88,8 +105,9 @@ public class Maze
 	 * Inner recursive method for solving the maze. Works through
 	 * all the possible options, unwinding/backtracking when necessary.
 	 * 
-	 * @param url
-	 * @returns boolean whether a solution was found
+	 * @param row  current row index
+	 * @param col  current column index
+	 * @return whether a solution was found
 	 */
     private boolean solve(int row, int col)
     {

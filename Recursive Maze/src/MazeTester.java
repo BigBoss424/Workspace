@@ -15,16 +15,18 @@ public class MazeTester
 	 */
 	public static void main(String[] args)
 	{
-    	Maze ma = new Maze();
+    	Maze tunnel = new Maze();
+    	tunnel.beAwesome();
+    	
     	System.out.println("Preparing to solve...");
     	
-    	if (ma.solve())
+    	if (tunnel.solve())
     		System.out.println("Solution found!");
     	else
     		System.out.println("No solution possible.");
     	
     	System.out.println();
-    	ma.displayGrid();
+    	System.out.println(tunnel);
 
 	}
 }
