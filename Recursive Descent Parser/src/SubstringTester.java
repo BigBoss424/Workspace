@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 /**
  * Runner class for the Recursive Descent Parser. Contains initial call to
  * recursive method and the proper printing code.
@@ -7,6 +5,9 @@ import java.util.Scanner;
  * @author Stephen Hoerner
  * @see "No external resources used"
  */
+
+import java.util.Scanner;
+
 public class SubstringTester
 {
 	/**
