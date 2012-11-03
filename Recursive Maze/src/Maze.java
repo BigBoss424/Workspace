@@ -1,68 +1,130 @@
+/**
+ * Primary class of the maze solver. Contains all the
+ * fields and methods necessary for solving a maze.
+ * 
+ * @author Stephen Hoerner
+ * @see "No external resources used"
+ */
 
 public class Maze
 {
-    private int[][] grid =  {	{1,1,1,0,1,1,0,0,0,1,1,1,1},
-								{1,0,1,1,1,0,1,1,1,1,0,0,1},
-								{0,0,0,0,1,0,1,0,1,0,1,0,0},
-								{1,1,1,0,1,1,1,0,1,0,1,1,1},
-								{1,0,1,0,0,0,0,1,1,1,0,0,1},
-								{1,0,1,1,1,1,1,1,0,1,1,1,1},
-								{1,0,0,0,0,0,0,0,0,0,0,0,0},
-								{1,1,1,1,1,1,1,1,1,1,1,1,1}	};
+	// default values for the grid
+    private int[][] grid = {{1,1,1,0,1,1,0,0,0,1,1,1,1},
+							{1,0,1,1,1,0,1,1,1,1,0,0,1},
+							{0,0,0,0,1,0,1,0,1,0,1,0,0},
+							{1,1,1,0,1,1,1,0,1,0,1,1,1},
+							{1,0,1,0,0,0,0,1,1,1,0,0,1},
+							{1,0,1,1,1,1,1,1,0,1,1,1,1},
+							{1,0,0,0,0,0,0,0,0,0,0,0,0},
+							{1,1,1,1,1,1,1,1,1,1,1,1,1}};
     
+    // constants representing the possible values
+    private final int OPEN = 1;
     private final int VISITED = 3;
     private final int CORRECT = 7;
     
-    private int width = grid[0].length;
-    private int height = grid.length;
+    // helper fields
+    private int width, height;
     
-    public static void main(String[] args)
+	/**
+	 * Constructs a default Maze object.
+	 */
+    public Maze()
     {
-    	Maze ma = new Maze();
-    	ma.solve();
+    	width = grid[0].length;
+    	height = grid.length;
+    }
+
+	/**
+	 * Constructs a Maze object, with a custom set of
+	 * grid values. Verifies that the maze has adequate
+	 * dimensions.
+	 * 
+	 * @param grid the custom maze grid
+	 * @throws IllegalArgumentException
+	 */
+    public Maze(int[][] grid) throws IllegalArgumentException
+    {
+    	this.grid = grid;
+    	width = grid[0].length;
+    	height = grid.length;
+    	
+    	// validate the grid's dimensions
+    	for (int[] row : grid)
+    	{
+    		if (row.length != width)
+    			throw new IllegalArgumentException();
+    	}
     }
     
+	/**
+	 * Prints the values of the maze to the screen.
+	 */
+    public void displayGrid()
+    {
+    	for (int[] row : grid)
+    	{
+    		String str = "";
+    		for (int col : row)
+    		{
+    			str += col + " ";
+    		}
+    		System.out.println(str);
+    	}
+    }
+    
+	/**
+	 * Simple-looking method that recursively
+	 * solves the entire maze.
+	 * 
+	 * @returns boolean whether a solution was found
+	 */
     public boolean solve()
     {
-    	boolean result = solve(0, 0);
-    	System.out.print(grid);
-    	return result;
+    	return solve(0, 0);
     }
     
+	/**
+	 * Inner recursive method for solving the maze. Works through
+	 * all the possible options, unwinding/backtracking when necessary.
+	 * 
+	 * @param url
+	 * @returns boolean whether a solution was found
+	 */
     private boolean solve(int row, int col)
     {
-    	boolean found = false;
-    	
+    	boolean done = false;
     	grid[row][col] = VISITED;
     	
-    	//if (row == grid.length-1 && col == grid[row].length-1)
-    	if (row == 1 && col == 2)
-    		found = true;
-    		
-    	// left
-    	if (!found && col-1 >= 0 && grid[row][col-1] != VISITED)
-    	{
-    		found = solve(row, col-1);
-    	}
-    	// right
-    	if (!found && col+1 <= grid[row].length-1 && grid[row][col+1] != VISITED)
-    	{
-    		found = solve(row, col+1);
-    	}
+    	// reached the end?
+    	if (row == height-1 && col == width-1)
+    		done = true;
+    	
     	// up
-    	if (!found && row-1 >= 0 && grid[row-1][col] != VISITED)
+    	if (!done && row > 0 && grid[row-1][col] == OPEN)
     	{
-    		found = solve(row, col-1);
+    		done = solve(row-1, col);
     	}
     	// down
-    	if (!found && row+1 <= grid.length-1 && grid[row+1][col] != VISITED)
+    	if (!done && row < height - 1 && grid[row+1][col] == OPEN)
     	{
-    		found = solve(row, col-1);
+    		done = solve(row+1, col);
+    	}
+    	// left
+    	if (!done && col > 0 && grid[row][col-1] == OPEN)
+    	{
+    		done = solve(row, col-1);
+    	}
+    	// right
+    	if (!done && col < width - 1 && grid[row][col+1] == OPEN)
+    	{
+    		done = solve(row, col+1);
     	}
     	
-    	if (found)
+    	// mark as correct
+    	if (done)
     		grid[row][col] = CORRECT;
     	
-    	return found;
+    	return done;
     }
 }
