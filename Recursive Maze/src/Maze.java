@@ -13,6 +13,9 @@ public class Maze
     private final int VISITED = 3;
     private final int CORRECT = 7;
     
+    private int width = grid[0].length;
+    private int height = grid.length;
+    
     public static void main(String[] args)
     {
     	Maze ma = new Maze();
@@ -29,6 +32,8 @@ public class Maze
     private boolean solve(int row, int col)
     {
     	boolean found = false;
+    	
+    	grid[row][col] = VISITED;
     	
     	//if (row == grid.length-1 && col == grid[row].length-1)
     	if (row == 1 && col == 2)
@@ -57,8 +62,6 @@ public class Maze
     	
     	if (found)
     		grid[row][col] = CORRECT;
-    	else
-    		grid[row][col] = VISITED;
     	
     	return found;
     }
