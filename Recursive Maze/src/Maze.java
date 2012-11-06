@@ -8,7 +8,7 @@
 
 public class Maze
 {
-	// default values for the grid
+	/** the grid itself **/
     private int[][] grid = {{1,1,1,0,1,1,0,0,0,1,1,1,1},
 							{1,0,1,1,1,0,1,1,1,1,0,0,1},
 							{0,0,0,0,1,0,1,0,1,0,1,0,0},
@@ -17,15 +17,16 @@ public class Maze
 							{1,0,1,1,1,1,1,1,0,1,1,1,1},
 							{1,0,0,0,0,0,0,0,0,0,0,0,0},
 							{1,1,1,1,1,1,1,1,1,1,1,1,1}};
-    
-    // constants representing the possible values
+
+    /** constant for an empty space **/
     private final int OPEN = 1;
+    /** constant for an already visited space **/
     private final int VISITED = 3;
+    /** constant for a space in the final path **/
     private final int CORRECT = 7;
     
-    // helper fields
+    /** helper fields **/
     private int width, height;
-    private boolean awesomeMode = false;
     
 	/**
 	 * Constructs a default Maze object.
@@ -72,24 +73,14 @@ public class Maze
     	{
     		for (int col : row)
     		{
-    			if (!awesomeMode)
-    				str += col + " ";
-    			else if (col == 0)
-    				str += "| ";
-    			else if (col == 7)
-    				str += "• ";
+    			str += col + " ";
     		}
     		str += "\n";
     	}
     	
     	return str;
     }
-    
-    public void beAwesome()
-    {
-    	awesomeMode = true;
-    }
-    
+
 	/**
 	 * Simple-looking method that recursively
 	 * solves the entire maze.

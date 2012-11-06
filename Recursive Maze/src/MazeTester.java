@@ -11,12 +11,12 @@ public class MazeTester
 {
 
 	/**
-	 * @param args
+	 * Entry point for the application.
+	 * @param args  standard application arguments
 	 */
 	public static void main(String[] args)
 	{
     	Maze tunnel = new Maze();
-    	tunnel.beAwesome();
     	
     	System.out.println("Preparing to solve...");
     	
