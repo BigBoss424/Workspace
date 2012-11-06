@@ -28,5 +28,11 @@ public class MazeTester
     	System.out.println();
     	System.out.println(tunnel);
 
+
+        MazeGenerator gen = new MazeGenerator(10, 10);
+        gen.generate();
+        Maze generated = new Maze(gen.getGrid());
+        System.out.println("\nGenerated: ");
+        System.out.println();
 	}
 }
