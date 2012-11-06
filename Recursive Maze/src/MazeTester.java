@@ -3,6 +3,10 @@
  * of Maze object, calls the solve() method, and prints
  * the results.
  * 
+ * <b>EXTRA CREDIT:<b>
+ * <p>None attempted, as none assigned. However, a
+ *    simple maze generation script was added for fun.</p>
+ * 
  * @author Stephen Hoerner
  * @see "No external resources used"
  */
@@ -28,11 +32,9 @@ public class MazeTester
     	System.out.println();
     	System.out.println(tunnel);
 
-
-        MazeGenerator gen = new MazeGenerator(10, 10);
+        MazeGenerator gen = new MazeGenerator(20, 10);
         gen.generate();
-        Maze generated = new Maze(gen.getGrid());
-        System.out.println("\nGenerated: ");
-        System.out.println();
+        System.out.println("\nCustom Generated: ");
+        System.out.println(gen);
 	}
 }
