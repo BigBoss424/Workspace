@@ -63,6 +63,30 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "Recursive Maze/src/MazeTester.java",
+			"settings":
+			{
+				"buffer_size": 1046,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Recursive Maze/src/MazeGenerator.java",
+			"settings":
+			{
+				"buffer_size": 427,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Heroes vs Monsters/src/DungeonCharacter.java",
+			"settings":
+			{
+				"buffer_size": 1449,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "Packages/Java/JavaC.sublime-build",
 	"command_palette":
@@ -369,6 +393,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"motion",
 			".\");",
 			"exec ",
 			"exec",
@@ -499,8 +524,90 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Recursive Maze/src/MazeTester.java",
+					"settings":
+					{
+						"buffer_size": 1046,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								840,
+								840
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Recursive Maze/src/MazeGenerator.java",
+					"settings":
+					{
+						"buffer_size": 427,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								258,
+								258
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Heroes vs Monsters/src/DungeonCharacter.java",
+					"settings":
+					{
+						"buffer_size": 1449,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								783,
+								766
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
