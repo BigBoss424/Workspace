@@ -27,6 +27,7 @@ public class Maze
     
     /** helper fields **/
     private int width, height;
+    private boolean format = false;
     
 	/**
 	 * Constructs a default Maze object.
@@ -63,7 +64,7 @@ public class Maze
 	 * Returns the Maze in a viewable format. Each row 
 	 * is on a line, with each column separated by a space.
 	 * 
-	 * @return the Maze as a string
+	 * @return  the Maze as a string
 	 */
     public String toString()
     {
@@ -85,7 +86,7 @@ public class Maze
 	 * Simple-looking method that recursively
 	 * solves the entire maze.
 	 * 
-	 * @return whether a solution was found
+	 * @return  whether a solution was found
 	 */
     public boolean solve()
     {
@@ -98,7 +99,7 @@ public class Maze
 	 * 
 	 * @param row  current row index
 	 * @param col  current column index
-	 * @return whether a solution was found
+	 * @return  whether a solution was found
 	 */
     private boolean solve(int row, int col)
     {

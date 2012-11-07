@@ -1,3 +1,4 @@
+
 /**
  * Runner class for the maze solver. Contains initialization
  * of Maze object, calls the solve() method, and prints
@@ -20,8 +21,9 @@ public class MazeTester
 	 */
 	public static void main(String[] args)
 	{
+		// === DEFAULT MAZE ===
+		
     	Maze tunnel = new Maze();
-    	
     	System.out.println("Preparing to solve...");
     	
     	if (tunnel.solve())
@@ -32,9 +34,13 @@ public class MazeTester
     	System.out.println();
     	System.out.println(tunnel);
 
-        MazeGenerator gen = new MazeGenerator(20, 10);
+    	
+    	// === CUSTOM MAZE ===
+    	
+        MazeGenerator gen = new MazeGenerator(32, 16);
         gen.generate();
-        System.out.println("\nCustom Generated: ");
+        
+        System.out.println("\nCustom Generated:\n");
         System.out.println(gen);
 	}
 }
