@@ -6,7 +6,7 @@
  * 
  * <b>EXTRA CREDIT:<b>
  * <p>None attempted, as none assigned. However, a
- *    simple maze generation script was added for fun.</p>
+ *    primitive maze generation class was added for fun.</p>
  * 
  * @author Stephen Hoerner
  * @see "No external resources used"
@@ -40,7 +40,7 @@ public class MazeTester
         MazeGenerator gen = new MazeGenerator(32, 16);
         gen.generate();
         
-        System.out.println("\nCustom Generated:\n");
+        System.out.println("\nCustom maze generation (for fun):\n");
         System.out.println(gen);
 	}
 }
