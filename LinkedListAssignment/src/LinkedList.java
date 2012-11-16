@@ -2,10 +2,26 @@
 public class LinkedList
 {
 	private Node head;
+	private int count = 0;
+
+	private static Random rand = new Random();
 
 	public LinkedList(int size)
 	{
+		generateList(size);
+	}
 
+	public void generateList(int size)
+	{
+		if (size < 0)
+			throw new InvalidArgumentException("List cannot contain a negative amount of elements.");
+
+		clear();
+
+		for (int i = 0; i < size; i++)
+		{
+			add(Int(rand.nextInt(100)));
+		}
 	}
 
 	public void add(Int val)
@@ -20,6 +36,7 @@ public class LinkedList
 		}
 
 		n.next = new Node(val);
+		this.count++;
 	}
 
 	public void print()
@@ -36,14 +53,15 @@ public class LinkedList
 	public int deleteValue(Int val)
 	{
 		Node n = head;
-		int count = 0;
+		int c = 0;
 
 		while (n != null && n.next != null)
 		{
 			if (n.next.data == val)
 			{
 				n.next = n.next.next;
-				count++;
+				c++;
+				this.count--;
 			}
 
 			n = n.next;
@@ -70,13 +88,13 @@ public class LinkedList
 	public void printNth(int n)
 	{
 		Node n = head;
-		int count = 0;
+		int c = 0;
 
 		while (n != null)
 		{
-			count++;
+			c++;
 
-			if (count % 2 == 0)
+			if (c % 2 == 0)
 				System.out.println(n);
 
 			n = n.next;
