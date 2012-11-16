@@ -1,9 +1,10 @@
+import java.util.Random;
 
 public class LinkedList
 {
 	private Node head;
 	private int count = 0;
-
+	
 	private static Random rand = new Random();
 
 	public LinkedList(int size)
@@ -14,28 +15,35 @@ public class LinkedList
 	public void generateList(int size)
 	{
 		if (size < 0)
-			throw new InvalidArgumentException("List cannot contain a negative amount of elements.");
+			throw new IllegalArgumentException("List cannot contain a negative amount of elements.");
 
 		clear();
 
 		for (int i = 0; i < size; i++)
 		{
-			add(Int(rand.nextInt(100)));
+			add(new Integer(rand.nextInt(100)));
 		}
 	}
 
-	public void add(Int val)
+	public void add(Integer val)
 	{
 		// TODO add sort-insertion code
 		
 		Node n = head;
-
-		while (n != null && n.next != null)
+		
+		if (n == null)
 		{
-			n = n.next;
+			head = new Node(val);
 		}
-
-		n.next = new Node(val);
+		else
+		{
+			while (n != null && n.next != null)
+			{
+				n = n.next;
+			}
+	
+			n.next = new Node(val);
+		}
 		this.count++;
 	}
 
@@ -50,14 +58,14 @@ public class LinkedList
 		}
 	}
 
-	public int deleteValue(Int val)
+	public int deleteValue(Integer val)
 	{
 		Node n = head;
 		int c = 0;
 
 		while (n != null && n.next != null)
 		{
-			if (n.next.data == val)
+			if (n.next.data.equals(val))
 			{
 				n.next = n.next.next;
 				c++;
@@ -67,7 +75,7 @@ public class LinkedList
 			n = n.next;
 		}
 
-		return count;
+		return c;
 	}
 
 	public void clear()
@@ -85,7 +93,7 @@ public class LinkedList
 		printNth(2);
 	}
 
-	public void printNth(int n)
+	public void printNth(int offset)
 	{
 		Node n = head;
 		int c = 0;
@@ -94,7 +102,7 @@ public class LinkedList
 		{
 			c++;
 
-			if (c % 2 == 0)
+			if (c % offset == 0)
 				System.out.println(n);
 
 			n = n.next;
@@ -103,7 +111,7 @@ public class LinkedList
 
 	private void printReversed(Node n)
 	{
-		if (head == null)
+		if (n == null)
 			return;
 
 		printReversed(n.next);
@@ -112,17 +120,23 @@ public class LinkedList
 
 	private class Node
 	{
-		public Int data;
+		public Integer data;
 		public Node next;
 
-		public Node(Int data)
+		public Node(Integer data)
 		{
 			this(data, null);
 		}
-		public Node(Int data, Node next)
+		public Node(Integer data, Node next)
 		{
 			this.data = data;
 			this.next = next;
+		}
+		
+		@Override
+		public String toString()
+		{
+			return data.toString();
 		}
 	}
 }
