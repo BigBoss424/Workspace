@@ -17,6 +17,11 @@ public class LinkedList
 		generateList(size);
 	}
 
+	public int length()
+	{
+		return count;
+	}
+	
 	public void generateList(int size)
 	{
 		if (size < 0)
@@ -32,16 +37,22 @@ public class LinkedList
 
 	public void add(Integer val)
 	{
-		// TODO add sort-insertion code
-		
 		Node n = head;
 		
-		if (n == null)
+		// special case
+		if (head == null)
 		{
 			head = new Node(val);
 		}
+		
+		// take head node into account for sort insertion
+		else if (val.compareTo(head.data) < 0)
+		{
+			head = new Node(val, head);
+		}
 		else
 		{
+			// stop when we've found a good spot or reach the end
 			while (n != null && n.next != null)
 			{
 				if (val.compareTo(n.next.data) < 0)
