@@ -7,6 +7,11 @@ public class LinkedList
 	
 	private static Random rand = new Random();
 
+	public LinkedList()
+	{
+		// pass...
+	}
+
 	public LinkedList(int size)
 	{
 		generateList(size);
@@ -88,13 +93,27 @@ public class LinkedList
 		printReversed(head);
 	}
 
-	public void printEvens()
+	public LinkedList getEvens()
 	{
-		printNth(2);
+		LinkedList result = new LinkedList();
+		Node n = head;
+
+		while (n != null)
+		{
+			if (n.data % 2 == 0)
+				result.add(n.data);
+
+			n = n.next;
+		}
+		
+		return result;
 	}
 
 	public void printNth(int offset)
 	{
+		if (offset <= 0)
+			throw new IllegalArgumentException("Lowest possible number is 1.");
+		
 		Node n = head;
 		int c = 0;
 
@@ -110,7 +129,7 @@ public class LinkedList
 	}
 
 	private void printReversed(Node n)
-	{
+	{	
 		if (n == null)
 			return;
 
