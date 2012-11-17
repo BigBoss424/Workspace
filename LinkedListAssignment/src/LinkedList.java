@@ -44,10 +44,13 @@ public class LinkedList
 		{
 			while (n != null && n.next != null)
 			{
+				if (val.compareTo(n.next.data) < 0)
+					break;
+				
 				n = n.next;
 			}
 	
-			n.next = new Node(val);
+			n.next = new Node(val, n.next);
 		}
 		this.count++;
 	}
