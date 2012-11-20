@@ -3,7 +3,7 @@ import java.util.Random;
 public class LinkedList
 {
 	private Node head;
-	private int count = 0;
+	private int size = 0;
 	
 	private static Random rand = new Random();
 
@@ -17,9 +17,9 @@ public class LinkedList
 		generateList(size);
 	}
 
-	public int length()
+	public int getSize()
 	{
-		return count;
+		return size;
 	}
 	
 	public void generateList(int size)
@@ -63,7 +63,7 @@ public class LinkedList
 	
 			n.next = new Node(val, n.next);
 		}
-		this.count++;
+		this.size++;
 	}
 
 	public void print()
@@ -88,7 +88,7 @@ public class LinkedList
 			{
 				n.next = n.next.next;
 				c++;
-				this.count--;
+				this.size--;
 			}
 
 			n = n.next;
@@ -100,6 +100,7 @@ public class LinkedList
 	public void clear()
 	{
 		head = null;
+		size = 0;
 	}
 
 	public void printReversed()
