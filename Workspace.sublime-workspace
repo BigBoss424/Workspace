@@ -63,6 +63,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "LinkedListAssignment/src/LinkedList.java",
+			"settings":
+			{
+				"buffer_size": 2408,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "Packages/Java/JavaC.sublime-build",
 	"command_palette":
@@ -369,6 +377,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"data",
+			"add",
+			"IllegalArgumentException",
+			"printReversed",
+			"clear",
+			"a",
+			"clear",
+			"generateList",
+			"cannot",
 			"motion",
 			".\");",
 			"exec ",
@@ -500,8 +517,36 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "LinkedListAssignment/src/LinkedList.java",
+					"settings":
+					{
+						"buffer_size": 2408,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								283,
+								283
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -710,6 +755,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"gr",
+				"/C/Users/Stephen/_Grading/Grading.sublime-project"
+			],
 			[
 				"mag",
 				"/C/server/htdocs/MagicalResite/MagicalResite.sublime-project"

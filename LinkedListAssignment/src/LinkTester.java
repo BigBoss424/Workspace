@@ -1,21 +1,35 @@
+
+
+
 import java.util.Scanner;
+
+/**
+ * Calling class for the LinkedList project.
+ * 
+ * @author Stephen Hoerner
+ * @see "No external resources used"
+ */
 
 public class LinkTester
 {
-	private static final String LINE = "- - - - -";
-	
+	/**
+	 * Entry point for the program
+	 * @param args Don't bother entering any arguments... we don't use 'em
+	 */
 	public static void main(String[] args)
 	{
+		// Initialization
 		Scanner kb = new Scanner(System.in);
 		LinkedList list = new LinkedList();
 
 		int choice;
-
+		
+		// Loop through the menu until user quits
 		do
 		{
-			// get a valid choice
 			displayMenu();
 			
+			// Get a VALID choice from the user, or repeat ad nauseum
 			while (true)
 			{
 				try
@@ -40,6 +54,7 @@ public class LinkTester
 
 			switch (choice)
 			{
+				// Create new, random list
 				case 1:
 					try
 					{
@@ -56,28 +71,33 @@ public class LinkTester
 					}
 					break;
 
+				// "Sort" the list — they're actually pre-sorted
 				case 2:
 					System.out.println("Sorted.");
 					break;
 
+				// Print the values
 				case 3:
 					printLine();
 					list.print();
 					printLine();
 					break;
-
+				
+				// Print the values... in reverse!
 				case 4:
 					printLine();
 					list.printReversed();
 					printLine();
 					break;
 
+				// Print the even values
 				case 5:
 					printLine();
 					list.getEvens().print();
 					printLine();
 					break;
 
+				// Print the "Nth" values
 				case 6:
 					try
 					{
@@ -98,6 +118,7 @@ public class LinkTester
 					}
 					break;
 
+				// Deletion by value
 				case 7:
 					try
 					{
@@ -114,6 +135,7 @@ public class LinkTester
 					}
 					break;
 
+				// Clear the list
 				case 8:
 					list.clear();
 					System.out.println("List cleared.");
@@ -126,6 +148,9 @@ public class LinkTester
 		while (choice > 0 && choice < 9);
 	}
 	
+	/**
+	 * Prints a copy of the menu
+	 */
 	private static void displayMenu()
 	{
 		System.out.println("OPTIONS");
@@ -141,8 +166,11 @@ public class LinkTester
 		System.out.println();
 	}
 
+	/**
+	 * Handy helper function
+	 */
 	private static void printLine()
 	{
-		System.out.println(LINE);
+		System.out.println("- - - - -");
 	}
 }
